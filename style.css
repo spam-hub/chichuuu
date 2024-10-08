@@ -402,3 +402,35 @@ body {
   footer p {
     margin: 0;
   }
+/* Heart Blast Animation */
+#heart-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1000;
+  }
+  
+  .heart {
+    position: absolute;
+    color: #ff69b4; /* Pink color for the hearts */
+    font-size: 2rem;
+    animation: fly 2s ease-in-out infinite;
+    opacity: 0;
+  }
+  
+  @keyframes fly {
+    0% {
+      transform: translateY(0) rotate(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100vh) rotate(720deg);
+      opacity: 0;
+    }
+  }
+  
+  /* Add your existing CSS for the hero, gallery, and other sections here */
+  

@@ -35,12 +35,17 @@ window.addEventListener('scroll', function() {
     });
   });
 // Function to prompt for password and redirect
-function showPasswordPrompt() {
-    const password = prompt("Please enter the password:");
-    if (password === "chichuuu") {
-      window.location.href = "private-gallery.html";
+
+  function showPasswordPrompt() {
+    const password = prompt("Please enter the password to view the private gallery:");
+    if (password === 'chichuuu') {
+      window.location.href = "private-gallery.html"; // Redirect to the private gallery page
     } else {
-      alert("Incorrect password. Please try again.");
+      alert("Incorrect password. Access denied.");
     }
   }
-      
+  
+  function forgive() {
+    alert("Thank you for forgiving me, Chichuuu! 💖");
+  }
+  
